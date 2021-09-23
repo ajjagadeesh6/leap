@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+}
+.rightlog span.info, .logaccount span.info {
+    color: #008EFF;
+   
+}
+
+.logaccount select.form-select {
+    border: 0; padding: 8px 0;     color: #008EFF; font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+
+.logaccount span.info {
+    margin: 0 0 0 12px;
+}
+
+
+.logaccount span.input-group-text {
+    background: none; font-size: 14px;
+    border: 0;     color: #008EFF; font-weight: bold;
+}
+
+.logaccount .form-group {
+    margin: 0 0 20px 0;
+}
+
+
+
+.logintop strong {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.logintop h4 {
+    margin: 7px 0 3px 0;
+}
+
+.logaccount span.info{}
+
+.logintop p {
+    font-weight: 100;
+}
+.logbox a{text-decoration:none; color:#008EFF;}
+.logaccount {
+    padding: 45px;
+    border-right: 1px solid #eee;
+}
+.loginsection{background:#008EFF;}
+.logbox {
+    background: #fff;
+    border-radius: 28px;
+}
+
+.logintop {
+    text-align: center;
+    color: #fff;
+    margin: 0 0 0 0;
+}
+h4.log-head {
+    color: #008EFF;
+    font-size: 19px;     font-weight: bold;
+    margin: 0 0 37px 0;
+}
+.leaplogo {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px 0;
+}
+.logaccount input{border:0; border-bottom:1px solid #eee; box-shadow:unset; font-size:14px;  padding: 8px 0;  color: #008EFF !important;}
+.logaccount input:focus{border:0; border-bottom:1px solid #008EFF; box-shadow:unset;}
+.logaccount .form-group label {
+    color: #008EFF;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.forgotpass {
+    margin: 14px 0 0 0;
+}
+
+.logaccount .logbutton {
+    border-radius: 12px;
+    padding: 12px 54px;
+}
+.logaccount .logbutton.currentactive {
+    background: #008EFF;
+    color: #fff;
+
+}
+.allbtns {
+    margin: 26px 0 0 0;
+}
+
+.logaccount .logbutton {
+    background: #fff;
+    color: #008EFF;
+ 
+}
+
+.logbottom p {
+    color: #fff;
+    font-weight: 100;
+}
+
+.rightinputs {
+    margin: 57px 0 0 0;
+}
+
+.logbox.register .allbtns {
+    margin: 50px 0 0 0;
+    text-align: right;
+}
+
+
+.logbox.register  .logaccount span.inforight, .rightlog span.inforight {
+    color: #008EFF;
+    position: absolute;
+    right: 28px;
+    top: 30px;
+}
+
+
+.forgotpass a, .forgotpass a:hover {
+
+    color: #008EFF;
+    font-size: 14px;
+}
+
+.logbottom {
+    margin: 29px 0 0 0;
+    text-align: center;
+}
+
+h5.samplehead{font-size:17px;   color: #008EFF; }
+p.sampleparag{ font-size:14px;   color: #008EFF;}
+.rightlog { width:100%; height:100%;
+    position: relative; padding: 45px;
+}
+.sample-imgprev {
+    position: absolute;
+    bottom: 41px;
+    left: 26px;
+}
+
+.sample-titles {
+    padding: 11px 0 0 17px;
+}
+
+
+.logbox.otpbox{}
+
+.logbox.otpbox .logaccount input{text-align:center; font-weight:bold;}
+
+.logaccount .logbutton.recievotp {
+    padding: 12px 14px;
+}
+
+.row.mt-6.otpur { margin: 50px 0 0 0;
+}
+
+
+.forgotpass.resend a {
+    margin: 43px 0;
+    display: block;
+}
+
+.logbox.register .logaccount{border:0; position: relative;}
+.logbox.register {
+    margin: 0 0 40px 0;
+}
+
+
+
+
+
+@media (max-width: 750px) {
+    .sample-imgprev {
+        position: unset;
+       
+    }
+
+
+
+    .logaccount {
+        
+        border-right: 0;
+    }
+
+
+    .leaplogo {
+        
+        padding: 47px 0 26px 0;
+       text-align: center;
+    }
+
+  }
+
+
+
+
