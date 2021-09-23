@@ -1,7 +1,6 @@
 import React from 'react';
 import './Leap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import sampleimage from './sample.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 function Stagregister() {

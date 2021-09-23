@@ -1,29 +1,14 @@
 import React from 'react';
 import './Leap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import sampleimage from './sample.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 function Otp() {
     document.body.style.backgroundColor = "#008EFF";
   return (
-
     <div className="loginsection">
-
-
-
-
-
-
-
-
-
     <div className="container">
-
     <div className="leaplogo">Leap Logo</div>
-
-
-
     <div className="logintop">
 
 <strong>Welcome To</strong>
@@ -113,7 +98,7 @@ function Otp() {
     <FontAwesomeIcon icon={faInfoCircle} />       </span> 
 <div className="sample-imgprev">
 
-<img src={sampleimage} />
+<img src="images/sample.jpg" />
 <div className="sample-titles">
 <h5 className="samplehead">Advertisment</h5>
 
