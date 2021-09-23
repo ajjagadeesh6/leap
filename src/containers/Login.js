@@ -35,7 +35,7 @@ function Login() {
   document.body.style.backgroundColor = "#008EFF";
   return (
     <div className="loginsection">
-      <h1>test</h1>
+    
       <div className="container">
         <div className="leaplogo">Leap Logo</div>
         <div className="logintop">
@@ -51,49 +51,47 @@ function Login() {
               <div className="row">
                 <div className="col-12 col-md-6">
                   <div className="logaccount">
+                  <h4 className="log-head"> Login To Your Account</h4>
                     <Form onSubmit={userLogin}>
+
                     <div className="form-group">
                       <Input
                         label="Username"
-                        placeholder="Username"
+               
                         value={username}
                         type="text"
                         className="form-control"
                         onChange={(e) => setUsername(e.target.value)}
                       />
                       </div>
-
+                      <div className="form-group">
                       <Input
                         label="Password"
-                        placeholder="Password"
+                       
                         value={password}
                         type="password"
                         className="form-control"
                         onChange={(e) => setPassword(e.target.value)}
                       />
 
+</div>
+                
+                   
+                    <div className="forgotpass"><a href="">Forgot your password?</a></div>
+                    <div className="allbtns">
+                   
+
+
                       <Button 
                       className="btn logbutton currentactive" 
                       type="submit">
                         Login
                       </Button>
-                    </Form>
-                    <h4 className="log-head"> Login To Your Account</h4>
-                    <div className="form-group">
-                      <label>User Name   </label>
-                      <input type="text" autoComplete="new-password" className="form-control" onChange={(e) => setUsername(e.target.value)} />
-                    </div>
-                    <div style={{ marginTop: 10 }} className="form-group">
-                      <label>Password
-                        <span class="info">
-                          <FontAwesomeIcon icon={faInfoCircle} />       </span> </label>
-                      <input type="password" autoComplete="new-password" className="form-control" onChange={(e) => setPassword(e.target.value)} />
-                    </div>
-                    <div className="forgotpass"><a href="">Forgot your password?</a></div>
-                    <div className="allbtns">
-                      <button type="button" className="btn logbutton currentactive" >Login</button>
-                      <Link to='/stagregister' className="btn logbutton"   >Signup</Link>
-                    </div>
+                 
+
+                  
+                      <Link to='/stagregister' className="btn logbutton"   >Signup</Link> 
+                    </div>     </Form>
                   </div>
                 </div> <div className="col-12 col-md-6">
                   <div className="rightlog">
