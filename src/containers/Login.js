@@ -90,7 +90,7 @@ function Login() {
                  
 
                   
-                      <Link to='/stagregister' className="btn logbutton"   >Signup</Link> 
+                      <Link to='/otp-varification' className="btn logbutton"   >Signup</Link> 
                     </div>     </Form>
                   </div>
                 </div> <div className="col-12 col-md-6">
