@@ -10,8 +10,7 @@ import {FormControl, FormGroup, ControlLabel, HelpBlock, Checkbox, Radio, Button
 function Clubmemregister() {
  document.body.style.backgroundColor = "#008EFF";
   return (
-
-    <div className="loginsection">
+ <div className="loginsection">
       <div className="container">
         <div className="leaplogo">Leap Logo</div>
         <div className="logintop">
