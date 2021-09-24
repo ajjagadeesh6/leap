@@ -160,32 +160,11 @@ function Stagregister() {
 
 <span class="inforight">
     <FontAwesomeIcon icon={faInfoCircle} />       </span> 
-
-
-
-
-
-
 </div>
-
-
-
       </div>  </div>
-
-
-
       </div></div>
-
-
-
-
       </div>
-
-    
-
-      </div>
-
-    
+      </div>    
     </div>
   );
 }

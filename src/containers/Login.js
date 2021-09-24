@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import { Link, Redirect } from 'react-router-dom';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Alert } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import './Leap.css';
 import { login } from '../redux/user/userActions';
@@ -26,6 +26,10 @@ function Login() {
     }
 
     dispatch(login(user));
+
+    if(auth.error){
+      setError(auth.error)
+  }
   }
 
   if (auth.authenticate) {
@@ -35,7 +39,7 @@ function Login() {
   document.body.style.backgroundColor = "#008EFF";
   return (
     <div className="loginsection">
-    
+
       <div className="container">
         <div className="leaplogo">Leap Logo</div>
         <div className="logintop">
@@ -51,47 +55,38 @@ function Login() {
               <div className="row">
                 <div className="col-12 col-md-6">
                   <div className="logaccount">
-                  <h4 className="log-head"> Login To Your Account</h4>
+                    <h4 className="log-head"> Login To Your Account</h4>
+                    {(error && !auth.loading ? (<Alert variant="danger">{error}</Alert>): null)}
                     <Form onSubmit={userLogin}>
-
-                    <div className="form-group">
-                      <Input
-                        label="Username"
-               
-                        value={username}
-                        type="text"
-                        className="form-control"
-                        onChange={(e) => setUsername(e.target.value)}
-                      />
+                      <div className="form-group">
+                        <Input
+                          label="Username"
+                          value={username}
+                          type="text"
+                          className="form-control"
+                          onChange={(e) => setUsername(e.target.value)}
+                        />
                       </div>
                       <div className="form-group">
-                      <Input
-                        label="Password"
-                       
-                        value={password}
-                        type="password"
-                        className="form-control"
-                        onChange={(e) => setPassword(e.target.value)}
-                      />
+                        <Input
+                          label="Password"
 
-</div>
-                
-                   
-                    <div className="forgotpass"><a href="">Forgot your password?</a></div>
-                    <div className="allbtns">
-                   
-
-
-                      <Button 
-                      className="btn logbutton currentactive" 
-                      type="submit">
-                        Login
-                      </Button>
-                 
-
-                  
-                      <Link to='/stagregister' className="btn logbutton"   >Signup</Link> 
-                    </div>     </Form>
+                          value={password}
+                          type="password"
+                          className="form-control"
+                          onChange={(e) => setPassword(e.target.value)}
+                        />
+                      </div>
+                      <div className="forgotpass"><a href="">Forgot your password?</a></div>
+                      <div className="allbtns">
+                        <Button
+                          className="btn logbutton currentactive"
+                          type="submit">
+                          Login
+                        </Button>
+                        <Link to='/stagregister' className="btn logbutton"   >Signup</Link>
+                      </div>
+                    </Form>
                   </div>
                 </div> <div className="col-12 col-md-6">
                   <div className="rightlog">
