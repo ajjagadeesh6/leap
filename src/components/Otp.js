@@ -21,10 +21,6 @@ function Otp() {
 <div className="container">
 
 
-
-
-
-
 <div className="row justify-content-center mt-3">
 <div className="col-12 col-md-8">
     <div className="logbox otpbox">
