@@ -4,9 +4,9 @@ import { Switch, Route } from 'react-router-dom';
 
 import './App.css';
 import Login from './containers/Login';
-import Stagregister from './components/Stagregister';
-import Otp from './components/Otp';
-import Clubmemregister from './components/Clubmemregister';
+import Stagregister from './containers/Stagregister';
+import Otp from './containers/Otp';
+import Clubmemregister from './containers/Clubmemregister';
 
 class App extends React.Component {
   render() {
