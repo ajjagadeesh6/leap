@@ -24,6 +24,7 @@ function Login() {
     const user = {
       username, password
     }
+    console.log('hkjhwjhkjhwdkjhk')
 
     dispatch(login(user));
   }
@@ -35,7 +36,7 @@ function Login() {
   document.body.style.backgroundColor = "#008EFF";
   return (
     <div className="loginsection">
-    
+
       <div className="container">
         <div className="leaplogo">Leap Logo</div>
         <div className="logintop">
@@ -51,47 +52,47 @@ function Login() {
               <div className="row">
                 <div className="col-12 col-md-6">
                   <div className="logaccount">
-                  <h4 className="log-head"> Login To Your Account</h4>
+                    <h4 className="log-head"> Login To Your Account</h4>
                     <Form onSubmit={userLogin}>
 
-                    <div className="form-group">
-                      <Input
-                        label="Username"
-               
-                        value={username}
-                        type="text"
-                        className="form-control"
-                        onChange={(e) => setUsername(e.target.value)}
-                      />
+                      <div className="form-group">
+                        <Input
+                          label="Username"
+
+                          value={username}
+                          type="text"
+                          className="form-control"
+                          onChange={(e) => setUsername(e.target.value)}
+                        />
                       </div>
                       <div className="form-group">
-                      <Input
-                        label="Password"
-                       
-                        value={password}
-                        type="password"
-                        className="form-control"
-                        onChange={(e) => setPassword(e.target.value)}
-                      />
+                        <Input
+                          label="Password"
 
-</div>
-                
-                   
-                    <div className="forgotpass"><a href="">Forgot your password?</a></div>
-                    <div className="allbtns">
-                   
+                          value={password}
+                          type="password"
+                          className="form-control"
+                          onChange={(e) => setPassword(e.target.value)}
+                        />
+
+                      </div>
 
 
-                      <Button 
-                      className="btn logbutton currentactive" 
-                      type="submit">
-                        Login
-                      </Button>
-                 
+                      <div className="forgotpass"><a href="">Forgot your password?</a></div>
+                      <div className="allbtns">
 
-                  
-                      <Link to='/otp-varification' className="btn logbutton"   >Signup</Link> 
-                    </div>     </Form>
+
+
+                        <Button
+                          className="btn logbutton currentactive"
+                          type="submit">
+                          Login
+                        </Button>
+
+
+
+                        <Link to='/otp-varification' className="btn logbutton"   >Signup</Link>
+                      </div>     </Form>
                   </div>
                 </div> <div className="col-12 col-md-6">
                   <div className="rightlog">
