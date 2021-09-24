@@ -8,7 +8,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import {FormControl, FormGroup, ControlLabel, HelpBlock, Checkbox, Radio, Button} from 'react-bootstrap';
 function Clubmemregister() {
-  document.body.style.backgroundColor = "#008EFF";
+ document.body.style.backgroundColor = "#008EFF";
   return (
 
     <div className="loginsection">
