@@ -218,32 +218,14 @@ Next
 
 <span class="inforight">
     <FontAwesomeIcon icon={faInfoCircle} />       </span> 
-
-
-
-
-
-
 </div>
-
-
-
       </div>  </div>
 </Form>
 
 
       </div></div>
-
-
-
-
       </div>
-
-    
-
-      </div>
-
-    
+      </div>    
     </div>
   );
 }

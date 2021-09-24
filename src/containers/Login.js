@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import { Link, Redirect } from 'react-router-dom';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Alert } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import './Leap.css';
 import { login } from '../redux/user/userActions';
@@ -24,9 +24,12 @@ function Login() {
     const user = {
       username, password
     }
-    console.log('userddddddddddddddd', user)
 
     dispatch(login(user));
+
+    if(auth.error){
+      setError(auth.error)
+  }
   }
 
   if (auth.authenticate) {
@@ -53,12 +56,11 @@ function Login() {
                 <div className="col-12 col-md-6">
                   <div className="logaccount">
                     <h4 className="log-head"> Login To Your Account</h4>
+                    {(error && !auth.loading ? (<Alert variant="danger">{error}</Alert>): null)}
                     <Form onSubmit={userLogin}>
-
                       <div className="form-group">
                         <Input
                           label="Username"
-
                           value={username}
                           type="text"
                           className="form-control"
@@ -74,25 +76,17 @@ function Login() {
                           className="form-control"
                           onChange={(e) => setPassword(e.target.value)}
                         />
-
                       </div>
-
-
                       <div className="forgotpass"><a href="">Forgot your password?</a></div>
                       <div className="allbtns">
-
-
-
                         <Button
                           className="btn logbutton currentactive"
                           type="submit">
                           Login
                         </Button>
-
-
-
-                        <Link to='/otp-varification' className="btn logbutton"   >Signup</Link>
-                      </div>     </Form>
+                        <Link to='/stagregister' className="btn logbutton"   >Signup</Link>
+                      </div>
+                    </Form>
                   </div>
                 </div> <div className="col-12 col-md-6">
                   <div className="rightlog">
