@@ -24,7 +24,7 @@ function Login() {
     const user = {
       username, password
     }
-    console.log('hkjhwjhkjhw')
+    console.log('test')
 
     dispatch(login(user));
   }
