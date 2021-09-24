@@ -25,9 +25,9 @@ function Login() {
       username, password
     }
 
-    console.log(object)
+    console.log('user', user)
 
-    dispatch(login('user',user));
+    dispatch(login(user));
 
     if(auth.error){
       setError(auth.error)
