@@ -5,9 +5,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 import Login from './containers/Login';
 import Home from './containers/Home';
-import Stagregister from './components/Stagregister';
-import Otp from './components/Otp';
-import Clubmemregister from './components/Clubmemregister';
+import Stagregister from './containers/Stagregister';
+import Otp from './containers/Otp';
+import Clubmemregister from './containers/Clubmemregister';
 import { isUserLoggedIn } from './redux';
 import PrivateRoute from './components/HOC/PrivateRoute';
 
